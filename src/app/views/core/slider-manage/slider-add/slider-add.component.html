@@ -1,0 +1,31 @@
+<c-row ngPreserveWhitespaces>
+    <c-col xs="12">
+        <c-card class="mb-4" id="AngularButton">
+            <c-card-header>
+                <strong>Gaceta pdf</strong>
+            </c-card-header>
+            <c-card-body>
+                <form autocomplete="off" [formGroup]="frmSlider" (submit)="saveData()">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Descripcion</mat-label>
+                                <input matInput placeholder="Descripcion" formControlName="description">
+                            </mat-form-field>
+                        </div>
+                        
+                        <input type="file" accept=".jpg,.png" (change)="onFileSelected($event)" #pdfInput>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-end">
+                            <button cButton [color]="'success'" type="submit">Guardar</button>
+                            <button cButton [color]="'danger'" (click)="clickCancel()" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+
+            </c-card-body>
+        </c-card>
+    </c-col>
+</c-row>

@@ -1,0 +1,62 @@
+.icon-display {
+  transform: scale(0.5);
+}
+
+.bg {
+  
+  //background-image: url('~/src/assets/images/login-background.jpg');
+
+  
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-password-field {
+  font-family: text-security-disc;
+  -webkit-text-security: disc;
+}
+
+.login-background {
+  //background-image: url('~/src/assets/images/login-background.jpg');
+  background-color: cadetblue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}

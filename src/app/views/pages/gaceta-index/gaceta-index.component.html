@@ -1,0 +1,399 @@
+
+        <main>
+            <div class="container">
+                <div id="Level-1">
+                    <div class="Content">
+                        <div class="slider">
+                          <div class="slides" [style.transform]="'translateX(' + slidePosition + '%)'">
+                            <div class="slide" *ngFor="let item of items">
+                              <img [src]="getSafeImageUrl(item.image)" alt="" class="slide-image">
+                              <div class="separator-line"></div>
+                              <div class="description-container">
+                                <div class="description">
+                                  <p>{{ item.description }}</p>
+                                </div>
+                              </div>
+                              <div class="separator-line"></div>
+                            </div>
+                          </div>
+                          <div class="controls">
+                            <button (click)="previousSlide()"><i class="fas fa-arrow-left"></i></button>
+                            <button (click)="nextSlide()"><i class="fas fa-arrow-right"></i></button>
+                          </div>
+                      
+                          <div class="navigation-dots">
+                            <span class="dot" [class.active]="currentIndex === i" *ngFor="let item of items; let i = index" (click)="goToSlide(i)"></span>
+                          </div>
+                          <div class="separator-line"></div>                          
+                        </div>
+                      </div>                      
+                    <div class="Sidebar">
+                        <div class="Panel-elements Banner Home">
+                            <div class="Image">
+                                <a id="banner_1" target="_blank">
+                                    <img alt="" height="160" src="../../../../assets/img/lateral3.jpg" width="320">      
+                                </a>
+                            </div>
+                            <div class="Title">
+                                <h3>
+                                    <a id="link_banner_1" target="_self">
+                                        PALACIO MUNICIPAL 
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="Panel-elements Banner Home">
+                            <div class="Image">
+                                <a href="#" id="banner_2" target="_self">
+                                    <img alt="" height="160" src="../../../../assets/img/lateral4.jpg" width="320">
+                                </a>
+                            </div>
+                            <div class="Title">
+                                <h3>
+                                    <a href="#" id="link_banner_1" target="_self">
+                                        QUIOSCO
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="Panel-elements Banner Home">
+                            <div class="Image">
+                                <a href="#" id="banner_2" target="_self">
+                                    <img alt="" height="160" src="../../../../assets/img/lateral5.jpg" width="320">
+                                </a>
+                            </div>
+                            <div class="Title">
+                                <h3>
+                                    <a href="#" id="link_banner_1" target="_self">
+                                        SAN PEDRO TOTOLAPAM
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="container">
+                    <div class="owl-carousel owl-theme">
+                      <div class="item" *ngFor="let image of images">
+                        <img [src]="image.src" [alt]="image.alt" />
+                        <h3>{{ image.alt }}</h3>
+                      </div>
+                    </div>
+                  </div>
+                   -->
+                <div id="Level-2">
+                    <div class="FullContent">
+                        <!--<div class="Panel-nullContent">El componente <strong>eventos</strong> aún no esta completo, favor de cargar contenido.</div>-->
+                    </div>
+                </div>
+                <div id="level-3">
+                    <div class="FullContent">
+                        <div class="Panel-empty Image-links R3">
+                            <div class="Title">
+                                <h2>
+                                </h2>
+                            </div>
+                            <div class="Panel-imageLinks-item">
+                                <div class="Image-normal">
+                                    <a href="#" target="_self">
+                                        <img alt="" height="180" src="../../../../assets/img/galeria7.jpg" width="320">
+                                    </a>
+                                </div>
+                                <div class="Title">
+                                    <h4>
+                                        <a href="#" target="_self">
+                                            Descripcion Galeria 1
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="Panel-imageLinks-item">
+                                <div class="Image-normal">
+                                    <a href="#" target="_self">
+                                        <img alt="" height="180" src="../../../../assets/img/galeria8.jpg" width="320">
+                                    </a>
+                                </div>
+                                <div class="Title">
+                                    <h4>
+                                        <a href="#" target="_self">
+                                            Descripcion Galeria 2
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="Panel-imageLinks-item">
+                                <div class="Image-normal">
+                                    <a href="#" target="_self">
+                                        <img alt="" height="180" src="../../../../assets/img/galeria9.jpg" width="320">
+                                    </a>
+                                </div>
+                                <div class="Title">
+                                    <h4>
+                                        <a href="#" target="_self">
+                                            Descripcion Galeria 3
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="Panel-imageLinks-item">
+                                <div class="Image-normal">
+                                    <a href="#" target="_self">
+                                        <img alt="" height="180" src="../../../../assets/img/galeria10.jpg" width="320">
+                                    </a>
+                                </div>
+                                <div class="Title">
+                                    <h4>
+                                        <a href="#" target="_self">
+                                            Descripcion Galeria 4
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="Panel-imageLinks-item">
+                                <div class="Image-normal">
+                                    <a href="#" target="_self">
+                                        <img alt="" height="180" src="../../../../assets/img/galeria11.jpg" width="320"> 
+                                    </a>
+                                </div>
+                                <div class="Title">
+                                    <h4>
+                                        <a href="#" target="_self">
+                                            Descripcion Galeria 5
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="Panel-imageLinks-item">
+                                <div class="Image-normal">
+                                    <a href="#" target="_self">
+                                        <img alt="" height="180" src="../../../../assets/img/galeria12.jpg" width="320">
+                                        
+                                    </a>
+                                </div>
+                                <div class="Title">
+                                    <h4>
+                                        <a href="" target="_self">
+                                            Descripcion Galeria 6
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="level-4">
+                    <div class="FullContent">
+                    </div>
+                </div>
+                <div id="level-5">
+                    <div class="FullContent">
+                        <div class="Title">
+                            <h2>
+                                Comunicación
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="Content">
+                        <div class="Panel-elements Card News">
+                            <div class="Panel-card-image">
+                                <div class="Image-news">
+                                    <a href="#">
+                                        <img alt="" height="180" src="../../../../assets/img/comunicacion4.jpg" width="320">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="Panel-card-card">
+                                <div class="Datetime-tag">
+                                    <a href="#">
+                                        DESCRIPCION
+                                    </a>
+                                    <span>
+                                        01 Abril 2023
+                                    </span>
+                                </div>
+                                <div class="Title">
+                                    <h3>
+                                        <a href="#">
+                                            Titulo o Descripcion...
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="Text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Panel-elements Card News">
+                            <div class="Panel-card-image">
+                                <div class="Image-news">
+                                    <a href="#">
+                                        <img alt="" height="180" src="../../../../assets/img/comunicacion5.jpg" width="320">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="Panel-card-card">
+                                <div class="Datetime-tag">
+                                    <a href="#">
+                                        DESCRIPCION
+                                    </a>
+                                    <span>
+                                        31 Marzo 2023
+                                    </span>
+                                </div>
+                                <div class="Title">
+                                    <h3>
+                                        <a href="#">
+                                            Titulo o Descripcion...
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="Text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Panel-elements Card News">
+                            <div class="Panel-card-image">
+                                <div class="Image-news">
+                                    <a href="#">
+                                        <img alt="" height="180" src="../../../../assets/img/comunicacion6.jpg" width="320"> 
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="Panel-card-card">
+                                <div class="Datetime-tag">
+                                    <a href="#">
+                                        DESCRIPCION
+                                    </a>
+                                    <span>
+                                        29 Marzo 2023
+                                    </span>
+                                </div>
+                                <div class="Title">
+                                    <h3>
+                                        <a href="#">
+                                            Titulo o Descripcion...
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="Text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Link-section">
+                            <a href="#">
+                                Ver todas las publicaciones
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Sidebar">
+                        <div class="Slider-tweets">
+                            <div class="Title">
+                                <h3>
+                                    Últimos tweets
+                                </h3>
+                            </div>
+                            <div class="Slider-one owl-carousel owl-theme owl-loaded">
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage" style="transform: translate3d(-2160px, 0px, 0px); transition: all 0.25s ease 0s; width: 3240px;">
+                                        <div class="owl-item cloned" style="width: 360px; margin-right: 0px;">
+                                            <div class="item">
+                                                <div class="Text">
+                                                    <a href="#" target="_blank">
+                                                        Descripcion
+                                                    </a>
+                                                   
+                                                    <a href="#" target="_blank">
+                                                        
+                                                    </a>
+                                                </div>
+                                                <div class="Text">
+                                                    <a href="#" target="_blank">
+                                                        <strong>
+                                                            Descripcion
+                                                        </strong>
+                                                    </a>
+                                                    RT @GobCDMX:
+                                                    <a href="#" target="_blank">
+                                                        #EnVivo
+                                                    </a>
+                                                    ▶️ La
+                                                    <a href="#" target="_blank">
+                                                        #JefaDeGobierno
+                                                    </a>
+                                                    encabeza el recorrido de supervisión de obra de la rehabilitación de la Terminal 2 de…
+                                                    <a href="#" target="_blank">
+                                                        https://t.co/SjnoWOttA8
+                                                    </a>
+                                                </div>
+                                                <div class="Text">
+                                                    <a href="#" target="_blank">
+                                                        <strong>
+                                                            @CDMXConsejeria
+                                                        </strong>
+                                                    </a>
+                                                    <a href="#" target="_blank">
+                                                        #JornadaNotarial2023
+                                                    </a>
+                                                    en Coyoacán hasta mañana viernes, 21 de abril.
+                                                    <a href="#" target="_blank">
+                                                        https://t.co/kzLWeKD0Y3
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="" id="BackTop" style="display: none;">
+                <a href="#" id="BackTop-action">
+                </a>
+            </div>
+        </main>
+   
+        
+        <script src="../../../../assets/js/framework.js">
+        </script> 
+        <script>
+            (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-80703668-4', 'auto');
+  ga('require', 'linkid');
+  ga('send', 'pageview');
+        </script>
+        <script async="" src="./Consejería Jurídica y de Servicios Legales de la CDMX_files/_Incapsula_Resource" type="text/javascript">
+        </script>
+        <div class="stripe-loading-indicator loaded">
+            <div class="stripe">
+            </div>
+            <div class="stripe-loaded">
+            </div>
+        </div>
+        
+        <script>
+            const slider = document.getElementById('mySlider');
+            const images = document.querySelectorAll('.slider-images img');
+        
+            slider.addEventListener('input', function() {
+              // Ocultar todas las imágenes
+              images.forEach(function(image) {
+                image.classList.remove('active');
+              });
+        
+              // Mostrar la imagen seleccionada
+              images[slider.value - 1].classList.add('active');
+            });
+          </script>

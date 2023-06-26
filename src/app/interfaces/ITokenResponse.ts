@@ -1,0 +1,20 @@
+import { IBaseCatalog } from "./IBaseCatalog";
+
+export interface ITokenResponse {
+    token: string;
+    refreshToken: string;
+    userData: IUserData
+}
+
+export interface IUserData {
+    id: string,
+    name: string,
+    email: string,
+    rol: IRol
+}
+
+export interface IRol{
+    id: string,
+    name: string,
+    active: boolean
+}

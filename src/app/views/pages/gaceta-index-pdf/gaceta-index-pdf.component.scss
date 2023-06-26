@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  background-color: #f0f0f0;
+  height: 150px;
+  width: 100%;
+  background-image: url('../../../../assets/img/consejeria_juridica_G.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#logo {
+  text-align: justify;
+  margin-right: 60px;
+}
+#logo a img {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+#logo span {
+  color: #9f2241;
+  font-weight: bold;
+}
+
+h1 {
+  background-color: #f0f0f0;
+  background-image: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.container p{
+  margin-bottom: 50px;
+}
+.pdf-table {
+  margin: 0 auto; 
+  width: 80%; 
+  //border: 1px solid #000;
+}
+.pdf-title {
+text-align: left; 
+font-weight: bold;
+margin-left: 40px;
+}
+
+.pdf-description {
+text-align: left; 
+margin-left: 40px;
+}
+.pointer {
+    cursor: pointer;
+    text-align: center;
+}
+.image-cell {
+  text-align: center;
+}
+
+.image-cell img {
+  display: block;
+  margin: 0 auto;
+}
+  

@@ -1,0 +1,1797 @@
+
+header.Header div.Header-top div.container div.Header-content div.HeaderSearch i.fa-search {
+    color: #904b58;
+}
+
+header.Header div.HeaderMenu ul.HeaderNav {
+    background-color: #904b58;;
+    border-bottom: solid 7px #ab8d5d
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container {
+    background: none;
+    border-bottom: none
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element {
+    border-left: 1px solid #ab8d5d
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element a {
+    color: white;
+    background: none !important
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element a:hover {
+    text-decoration: underline
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element ul.dropdown-menu li a {
+    color: #515a5a
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element ul.dropdown-menu li a:hover {
+    text-decoration: underline
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element:last-of-type {
+    border-right: 1px solid #ab8d5d
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.Fastlink {
+    background: none !important
+}
+
+.Header {
+    width: 100%;
+    padding: 0;
+}
+
+.Header .Header-top {
+    background-color: #fff;
+    padding: 42px 0 28px
+}
+
+.Header .Header-top > .container {
+    position: relative
+}
+
+.Header .Header-top > .container .row {
+    margin: 0
+}
+
+.Header .Header-top > .container .row .Header-content {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0 14px 0 0;
+}
+
+@media (min-width: 768px) {
+    .Header .Header-top > .container .row .Header-content {
+        float: left;
+        width: 100%
+    }
+}
+
+.Header .Header-top > .container .row .Header-links {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0
+}
+
+@media (min-width: 768px) {
+    .Header .Header-top > .container .row .Header-links {
+        float: left;
+        width: 33.33333333%
+    }
+}
+
+@media (min-width: 768px) {
+    .Header .Header-top > .container .row .Header-links {
+        margin-left: 8.33333333%
+    }
+}
+
+.Header .Header-top > .container .row .Header-links > .Items {
+    padding: 0 0 0 28px;
+    border-left: solid 3px #eaeaea;
+    list-style: none;
+    margin: 0
+}
+
+.Header .Header-top > .container .row .Header-links > .Items > li {
+    margin-bottom: 7px;
+    color: #6a7475;
+    opacity: 0.8
+}
+
+.Header .Header-top > .container .row .Header-links > .Items > li > a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: inherit;
+    font-size: 16px;
+    line-height: 100%
+}
+
+.Header .Header-top > .container .row .Header-links > .Items > li:first-of-type {
+    margin-bottom: 14px;
+    opacity: 0.5
+}
+
+.Header .Header-top > .container .row .Header-links > .Items > li:first-of-type > a {
+    font-weight: normal
+}
+
+.Header .Header-top > .container .row .Header-links > .Items > li:last-of-type {
+    margin: 0
+}
+
+@media (min-width: 1200px) {
+    .Header .HeaderMenu .HeaderNav {
+        display: block !important
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Header .Header-top {
+        padding: 28px 0
+    }
+
+    .Header .Header-top .Header-content .HeaderLogo > a > img.Logo-empresa {
+        width: 50%
+    }
+
+    .Header .Header-top .Header-links {
+        padding-left: 0
+    }
+
+    .Header .Header-top .Header-links .Items {
+        padding-left: 21px
+    }
+
+    .Header .Header-top .Header-links .Items > li {
+        margin-bottom: 7px !important
+    }
+
+    .Header .Header-top .Header-links .Items > li > a {
+        font-size: 16px
+    }
+
+    .Header .HeaderMenu .HeaderNav {
+        display: block !important
+    }
+
+    .Header .HeaderMenu .HeaderNav .container .HeaderNav-element > a {
+        padding: 21px 7px !important;
+        font-size: 16px
+    }
+
+    .Header .HeaderMenu .HeaderNav .container .HeaderNav-element.selected > a:before {
+        height: 21px;
+        left: 7px !important;
+        top: 14px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Header .Header-top {
+        padding: 28px 14px
+    }
+
+    .Header .Header-top .Header-content {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-right: 28px !important
+    }
+
+    .Header .Header-top .Header-content .HeaderLogo > a > img.Logo-empresa {
+        width: 44%
+    }
+
+    .Header .Header-top .Header-links {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-left: 0
+    }
+
+    .Header .Header-top .Header-links .Items {
+        padding-left: 21px !important
+    }
+
+    .Header .Header-top .Header-links .Items > li {
+        margin-bottom: 7px !important
+    }
+
+    .Header .Header-top .Header-links .Items > li > a {
+        font-size: 16px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) and (min-width: 768px) {
+    .Header .Header-top .Header-content {
+        float: left;
+        width: 58.33333333%
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) and (min-width: 768px) {
+    .Header .Header-top .Header-links {
+        float: left;
+        width: 33.33333333%
+    }
+}
+
+@media (max-width: 767px) {
+    .Header {
+        padding: 0;
+        position: relative;
+        background-color: #fff
+    }
+
+    .Header .container {
+        padding: 0 7px
+    }
+
+    .Header .container > .row {
+        margin: 14px 0
+    }
+
+    .Header .Header-top {
+        padding: 42px 0 !important
+    }
+
+    .Header .Header-top .Header-content {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-right: 0 !important
+    }
+
+    .Header .Header-top .Header-content .HeaderLogo {
+        padding: 7px 0 21px
+    }
+
+    .Header .Header-top .Header-content .HeaderLogo > a > img.Logo-empresa {
+        width: 43%
+    }
+
+    .Header .Header-top .Header-links {
+        display: none;
+        padding-left: 0
+    }
+
+    .Header .Header-top .Header-links .Items {
+        padding-left: 21px !important
+    }
+
+    .Header .Header-top .Header-links .Items > li {
+        margin-bottom: 7px !important
+    }
+
+    .Header .Header-top .Header-links .Items > li > a {
+        font-size: 16px
+    }
+}
+
+@media (max-width: 767px) and (min-width: 768px) {
+    .Header .Header-top .Header-content {
+        float: left;
+        width: 100%
+    }
+}
+
+.HeaderLogo {
+    width: 100%;
+    padding: 7px 0 28px
+}
+
+.HeaderLogo > a {
+    display: block
+}
+
+.HeaderLogo > a > img {
+    display: inline-block
+}
+
+.HeaderLogo > a > img.Logo-empresa {
+    width: 32%
+}
+
+.HeaderLogo > a > img.Logo-dep {
+    width: 55%
+}
+
+.HeaderLogo > a:hover,.HeaderLogo > a:focus {
+    text-decoration: none
+}
+
+.HeaderLogo-specific {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+@media (min-width: 992px) {
+    .HeaderLogo-specific {
+        float: left;
+        width: 50%
+    }
+}
+
+.HeaderLogo-specific .HeaderLogo-logo {
+    width: 480px
+}
+
+.HeaderLogo-empresa {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+@media (min-width: 992px) {
+    .HeaderLogo-empresa {
+        float: left;
+        width: 50%
+    }
+}
+
+.HeaderLogo-empresa > a {
+    display: block
+}
+
+@media (max-width: 767px) {
+    .HeaderLogo {
+        padding: 0 !important
+    }
+}
+
+.HeaderMenu {
+    padding-bottom: 7px;
+    background: url("/themes/base/assets/images/textures/brilliant.png") repeat repeat;
+    background-color: #efefef;
+}
+
+.HeaderMenu .HeaderNav-mobile {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 0
+}
+
+@media (min-width: 1200px) {
+    .HeaderMenu .HeaderNav-mobile {
+        display: none !important
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .HeaderMenu .HeaderNav-mobile {
+        display: none !important
+    }
+}
+
+.HeaderMenu .HeaderNav-mobile a {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 3.5px 7px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: solid 2px #904b58;;
+    color: #904b58;;
+    position: relative
+}
+
+.HeaderMenu .HeaderNav-mobile a:before {
+    position: absolute;
+    content: '\f0c9';
+    font-family: FontAwesome;
+    right: 14px;
+    font-size: 22px;
+    color: #904b58;
+}
+
+.HeaderMenu .HeaderNav-mobile a:hover,.HeaderMenu .HeaderNav-mobile a:focus {
+    text-decoration: none
+}
+
+.HeaderMenu .HeaderNav-mobile a.Active {
+    color: #fff;
+    background-color: #904b58;
+}
+
+.HeaderMenu .HeaderNav-mobile a.Active:before {
+    color: #fff
+}
+
+.HeaderMenu .Header-finder {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-right: 0
+}
+
+@media (min-width: 1200px) {
+    .HeaderMenu .Header-finder {
+        display: none !important
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .HeaderMenu .Header-finder {
+        display: none !important
+    }
+}
+
+.HeaderMenu .Header-finder a {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: solid 2px #904b58;;
+    color: #904b58;;
+    padding: 3.5px 7px
+}
+
+.HeaderMenu .Header-finder a:before {
+    position: absolute;
+    content: '\f002';
+    font-family: FontAwesome;
+    right: 14px;
+    font-size: 22px;
+    color: #904b58;
+}
+
+.HeaderMenu .Header-finder a:hover,.HeaderMenu .Header-finder a:focus {
+    text-decoration: none
+}
+
+.HeaderMenu .Header-finder a.Active {
+    color: #fff;
+    background-color: #904b58;
+}
+
+.HeaderMenu .Header-finder a.Active:before {
+    color: #fff
+}
+
+.HeaderMenu .Header-findbox {
+    display: none;
+    position: absolute;
+    padding: 0 7px 14px;
+    width: 100%;
+    top: 100%;
+    z-index: 99;
+    left: 0;
+    background-color: #fff
+}
+
+.HeaderMenu .Header-findbox .form-group {
+    margin: 0;
+    position: relative
+}
+
+.HeaderMenu .Header-findbox .form-group .form-control {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: solid 2px #904b58;;
+    box-shadow: none;
+    font-size: 23px;
+    height: 56px;
+    padding-left: 21px;
+    font-weight: normal
+}
+
+.HeaderMenu .Header-findbox .form-group:before {
+    position: absolute;
+    left: 0;
+    height: 35px;
+    width: 7px;
+    content: "";
+    background-color: #904b58;;
+    top: 10.5px
+}
+
+.HeaderMenu .HeaderNav {
+    padding: 0px;
+    background-color: #f9f9f9;
+    list-style: none;
+    box-shadow: -1px 1px 1px #ccc;
+    border-bottom: solid 7px #904b58;;
+    margin: 0
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container {
+    display: table;
+    padding: 0px;
+    list-style: none;
+    margin: 0;
+    width: 100%
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element {
+    float: none;
+    display: table-cell;
+    border-left: solid 1px #ddd;
+    position: relative;
+    max-width: 175px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.exception {
+    max-width: 175px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element:last-of-type {
+    border-right: solid 1px #ddd
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.selected > a {
+    color: #904b58;;
+    position: relative
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.selected > a:before {
+    position: absolute;
+    content: '';
+    margin-right: 4px;
+    left: 21px;
+    height: 14px;
+    width: 7px;
+    top: 24px;
+    background-color: #904b58;
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element > a {
+    padding: 21px 28px 21px 28px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: center;
+    color: inherit;
+    position: relative;
+    line-height: 21px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element > a:hover {
+    text-decoration: underline
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.dropdown > a:after {
+    content: '\f078';
+    font-family: FontAwesome
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.dropdown > ul {
+    margin: 7px 0 0;
+    padding: 0;
+    border-radius: 0
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.dropdown > ul > li {
+    border-bottom: solid 1px #ddd
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.dropdown > ul > li > a {
+    padding: 14px 28px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px #999;
+    z-index: 5
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content {
+    padding: 21px;
+    column-count: 4;
+    list-style: none;
+    column-fill: auto !important;
+    max-height: 500px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content > div:nth-of-type(4) {
+    break-after: column !important
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content .Header-navigation-parent > ul {
+    padding: 0;
+    list-style: none
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content .Header-navigation-parent > ul .Header-navigation-child {
+    padding: 7px 14px;
+    color: #333;
+    border: solid 1px #ddd;
+    display: inline-table;
+    width: 100%
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content .Header-navigation-parent > ul .Header-navigation-child a {
+    padding-left: 28px;
+    font-weight: normal
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content .Header-navigation-parent > ul .Header-navigation-child:first-child a {
+    padding-left: 14px !important;
+    font-weight: bolder !important
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content .Header-navigation-parent > ul .Header-navigation-child:last-child {
+    margin-bottom: 14px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.active .HeaderNav-navigation {
+    display: block
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element:nth-last-of-type(1) .dropdown-menu,.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element:nth-last-of-type(2) .dropdown-menu,.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element:nth-last-of-type(3) .dropdown-menu {
+    left: auto;
+    right: 0
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink {
+    display: none !important;
+    background-color: #fff;
+    border-bottom: solid 1px #ddd
+}
+
+@media (max-width: 767px) {
+    .HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink {
+        display: block !important
+    }
+
+    table.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink {
+        display: table
+    }
+
+    tr.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink {
+        display: table-row !important
+    }
+
+    th.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink,td.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink {
+        display: table-cell !important
+    }
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink > a {
+    color: #6a7475;
+    font-size: 14px;
+    padding-left: 42px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink > a:before {
+    position: absolute;
+    color: #6a7475;
+    content: "\f0e7";
+    font-family: FontAwesome;
+    left: 21px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink > a:hover {
+    background-color: transparent
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink:hover {
+    opacity: 0.7
+}
+
+.Dark > .HeaderMenu > .HeaderNav-mobile > a,.Dark > .HeaderMenu > .Header-finder > a {
+    border-color: #fff;
+    color: #fff
+}
+
+.Dark > .HeaderMenu > .HeaderNav-mobile > a:before,.Dark > .HeaderMenu > .Header-finder > a:before {
+    color: #fff
+}
+
+.Dark > .HeaderMenu > .HeaderNav-mobile > a.Active,.Dark > .HeaderMenu > .Header-finder > a.Active {
+    color: #fff;
+    background-color: #fff
+}
+
+.Dark > .HeaderMenu > .HeaderNav-mobile > a.Active:before,.Dark > .HeaderMenu > .Header-finder > a.Active:before {
+    color: #fff
+}
+
+.Dark > .HeaderMenu > .HeaderNav > .container > .Header-container > .selected > a {
+    color: #fff
+}
+
+.Dark > .HeaderMenu > .HeaderNav > .container > .Header-container > .selected > a:before {
+    background-color: #fff
+}
+
+.Dark > .HeaderMenu > .Header-findbox > form > .form-group > .form-control {
+    border-color: #fff
+}
+
+.Dark > .HeaderMenu > .Header-findbox > form > .form-group:before {
+    background-color: #fff
+}
+
+@media (max-width: 991px) {
+    .HeaderMenu {
+        display: table;
+        width: 100%;
+        position: relative;
+        padding: 14px 7px;
+        background: none;
+        background-color: #fff
+    }
+
+    .HeaderMenu .HeaderNav {
+        border: none;
+        display: none;
+        box-shadow: none;
+        position: absolute;
+        padding: 0 7px;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 4
+    }
+
+    .HeaderMenu .HeaderNav .container {
+        border: solid 1px #ddd;
+        background-color: #f9f9f9;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container {
+        display: block
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element {
+        max-width: none;
+        width: 100%;
+        border: none;
+        border-bottom: solid 1px #ddd;
+        display: block
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element:last-of-type {
+        border: none
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element > a {
+        text-align: left;
+        padding: 10.5px 14px;
+        font-weight: normal;
+        font-size: 18px
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element > a:hover,.HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element > a:focus {
+        background-color: #efefef;
+        text-decoration: none
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.dropdown > a:after {
+        position: absolute;
+        right: 14px
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.dropdown.open .dropdown-menu {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        width: 100%;
+        float: none;
+        top: 0;
+        box-shadow: none;
+        border: none;
+        border-top: solid 1px #ddd
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.dropdown.open .dropdown-menu li {
+        border-bottom: solid 1px #ddd
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.dropdown.open .dropdown-menu li a {
+        padding: 7px 7px 7px 35px;
+        font-weight: normal;
+        color: #808080;
+        font-size: 15px
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.dropdown.open .dropdown-menu li:last-of-type {
+        border: none
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.selected > a {
+        font-weight: bolder;
+        padding-left: 28px
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.selected > a:before {
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 14px
+    }
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .menu li:hover > .submenu {
+    display: block;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .submenu li {
+    display: block;
+  }
+  
+  .submenu li a {
+    padding: 5px;
+  }
+header.Header div.Header-top div.container div.Header-content div.HeaderSearch i.fa-search {
+    color: #904b58;
+}
+
+header.Header div.HeaderMenu ul.HeaderNav {
+    background-color: #6c9ef2;
+    border-bottom: solid 7px #df3c19
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container {
+    background: none;
+    border-bottom: none
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element {
+    border-left: 1px solid #ab8d5d
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element a {
+    color: white;
+    background: none !important
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element a:hover {
+    text-decoration: underline
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element ul.dropdown-menu li a {
+    color: #515a5a
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element ul.dropdown-menu li a:hover {
+    text-decoration: underline
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.HeaderNav-element:last-of-type {
+    border-right: 1px solid #ab8d5d
+}
+
+header.Header div.HeaderMenu ul.HeaderNav div.container ul.Header-container li.Fastlink {
+    background: none !important
+}
+
+.Header {
+    width: 100%;
+    padding: 0;
+}
+
+.Header .Header-top {
+    //CAMBIAR IMAGEN
+    background-image: url('../../../../../../assets/img/header.png');
+    padding: 10px 0 0px;
+}
+
+.Header .Header-top > .container {
+    position: relative
+}
+
+.Header .Header-top > .container .row {
+    margin: 0
+}
+
+.Header .Header-top > .container .row .Header-content {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0 14px 0 0;
+}
+
+@media (min-width: 768px) {
+    .Header .Header-top > .container .row .Header-content {
+        float: left;
+        width: 100%;
+    }
+}
+
+.Header .Header-top > .container .row .Header-links {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0
+}
+
+@media (min-width: 768px) {
+    .Header .Header-top > .container .row .Header-links {
+        float: left;
+        width: 33.33333333%
+    }
+}
+
+@media (min-width: 768px) {
+    .Header .Header-top > .container .row .Header-links {
+        margin-left: 8.33333333%
+    }
+}
+
+.Header .Header-top > .container .row .Header-links > .Items {
+    padding: 0 0 0 28px;
+    border-left: solid 3px #eaeaea;
+    list-style: none;
+    margin: 0
+}
+
+.Header .Header-top > .container .row .Header-links > .Items > li {
+    margin-bottom: 7px;
+    color: #6a7475;
+    opacity: 0.8
+}
+
+.Header .Header-top > .container .row .Header-links > .Items > li > a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: inherit;
+    font-size: 16px;
+    line-height: 100%
+}
+
+.Header .Header-top > .container .row .Header-links > .Items > li:first-of-type {
+    margin-bottom: 14px;
+    opacity: 0.5
+}
+
+.Header .Header-top > .container .row .Header-links > .Items > li:first-of-type > a {
+    font-weight: normal
+}
+
+.Header .Header-top > .container .row .Header-links > .Items > li:last-of-type {
+    margin: 0
+}
+
+@media (min-width: 1200px) {
+    .Header .HeaderMenu .HeaderNav {
+        display: block !important
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Header .Header-top {
+        padding: 28px 0
+    }
+
+    .Header .Header-top .Header-content .HeaderLogo > a > img.Logo-empresa {
+        width: 44%
+    }
+
+    .Header .Header-top .Header-links {
+        padding-left: 0
+    }
+
+    .Header .Header-top .Header-links .Items {
+        padding-left: 21px
+    }
+
+    .Header .Header-top .Header-links .Items > li {
+        margin-bottom: 7px !important
+    }
+
+    .Header .Header-top .Header-links .Items > li > a {
+        font-size: 16px
+    }
+
+    .Header .HeaderMenu .HeaderNav {
+        display: block !important
+    }
+
+    .Header .HeaderMenu .HeaderNav .container .HeaderNav-element > a {
+        padding: 21px 7px !important;
+        font-size: 16px
+    }
+
+    .Header .HeaderMenu .HeaderNav .container .HeaderNav-element.selected > a:before {
+        height: 21px;
+        left: 7px !important;
+        top: 14px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Header .Header-top {
+        padding: 28px 14px
+    }
+
+    .Header .Header-top .Header-content {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-right: 28px !important
+    }
+
+    .Header .Header-top .Header-content .HeaderLogo > a > img.Logo-empresa {
+        width: 44%
+    }
+
+    .Header .Header-top .Header-links {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-left: 0
+    }
+
+    .Header .Header-top .Header-links .Items {
+        padding-left: 21px !important
+    }
+
+    .Header .Header-top .Header-links .Items > li {
+        margin-bottom: 7px !important
+    }
+
+    .Header .Header-top .Header-links .Items > li > a {
+        font-size: 16px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) and (min-width: 768px) {
+    .Header .Header-top .Header-content {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) and (min-width: 768px) {
+    .Header .Header-top .Header-links {
+        float: left;
+        width: 33.33333333%
+    }
+}
+
+@media (max-width: 767px) {
+    .Header {
+        padding: 0;
+        position: relative;
+        background-color: #fff
+    }
+
+    .Header .container {
+        padding: 0 7px
+    }
+
+    .Header .container > .row {
+        margin: 14px 0
+    }
+
+    .Header .Header-top {
+        padding: 42px 0 !important
+    }
+
+    .Header .Header-top .Header-content {
+        position: relative;
+        // min-height: 1px;
+        // padding-left: 15px;
+        // padding-right: 15px;
+        // padding-right: 0 !important
+    }
+
+    .Header .Header-top .Header-content .HeaderLogo {
+        padding: 7px 0 21px
+    }
+
+    .Header .Header-top .Header-content .HeaderLogo > a > img.Logo-empresa {
+        width: 43%
+    }
+
+    .Header .Header-top .Header-links {
+        display: none;
+        padding-left: 0
+    }
+
+    .Header .Header-top .Header-links .Items {
+        padding-left: 21px !important
+    }
+
+    .Header .Header-top .Header-links .Items > li {
+        margin-bottom: 7px !important
+    }
+
+    .Header .Header-top .Header-links .Items > li > a {
+        font-size: 16px
+    }
+}
+
+@media (max-width: 767px) and (min-width: 768px) {
+    .Header .Header-top .Header-content {
+        float: left;
+        width: 58.33333333%
+    }
+}
+
+.HeaderLogo {
+    width: 100%;
+    padding: 7px 0 28px
+}
+
+.HeaderLogo > a {
+    display: block
+}
+
+.HeaderLogo > a > img {
+    display: inline-block
+}
+
+.HeaderLogo > a > img.Logo-empresa {
+    // CAMBIAR LOGO
+    width: 20%
+}
+//cambiar tamanio del logo descripcion
+.HeaderLogo > a > img.Logo-dep {
+    width: 74%;
+    margin-left: 30px;
+}
+
+.HeaderLogo > a:hover,.HeaderLogo > a:focus {
+    text-decoration: none
+}
+
+.HeaderLogo-specific {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+@media (min-width: 992px) {
+    .HeaderLogo-specific {
+        float: left;
+        width: 50%
+    }
+}
+
+.HeaderLogo-specific .HeaderLogo-logo {
+    width: 480px
+}
+
+.HeaderLogo-empresa {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+@media (min-width: 992px) {
+    .HeaderLogo-empresa {
+        float: left;
+        width: 50%
+    }
+}
+
+.HeaderLogo-empresa > a {
+    display: block
+}
+
+@media (max-width: 767px) {
+    .HeaderLogo {
+        padding: 0 !important
+    }
+}
+
+.HeaderMenu {
+    padding-bottom: 7px;
+    background: url("/themes/base/assets/images/textures/brilliant.png") repeat repeat;
+    background-color: #efefef;
+}
+
+.HeaderMenu .HeaderNav-mobile {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 0
+}
+
+@media (min-width: 1200px) {
+    .HeaderMenu .HeaderNav-mobile {
+        display: none !important
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .HeaderMenu .HeaderNav-mobile {
+        display: none !important
+    }
+}
+
+.HeaderMenu .HeaderNav-mobile a {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 3.5px 7px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: solid 2px #904b58;;
+    color: #904b58;;
+    position: relative
+}
+
+.HeaderMenu .HeaderNav-mobile a:before {
+    position: absolute;
+    content: '\f0c9';
+    font-family: FontAwesome;
+    right: 14px;
+    font-size: 22px;
+    color: #904b58;
+}
+
+.HeaderMenu .HeaderNav-mobile a:hover,.HeaderMenu .HeaderNav-mobile a:focus {
+    text-decoration: none
+}
+
+.HeaderMenu .HeaderNav-mobile a.Active {
+    color: #fff;
+    background-color: #904b58;
+}
+
+.HeaderMenu .HeaderNav-mobile a.Active:before {
+    color: #fff
+}
+
+.HeaderMenu .Header-finder {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-right: 0
+}
+
+@media (min-width: 1200px) {
+    .HeaderMenu .Header-finder {
+        display: none !important
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .HeaderMenu .Header-finder {
+        display: none !important
+    }
+}
+
+.HeaderMenu .Header-finder a {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: solid 2px #904b58;;
+    color: #904b58;;
+    padding: 3.5px 7px
+}
+
+.HeaderMenu .Header-finder a:before {
+    position: absolute;
+    content: '\f002';
+    font-family: FontAwesome;
+    right: 14px;
+    font-size: 22px;
+    color: #904b58;
+}
+
+.HeaderMenu .Header-finder a:hover,.HeaderMenu .Header-finder a:focus {
+    text-decoration: none
+}
+
+.HeaderMenu .Header-finder a.Active {
+    color: #fff;
+    background-color: #904b58;
+}
+
+.HeaderMenu .Header-finder a.Active:before {
+    color: #fff
+}
+
+.HeaderMenu .Header-findbox {
+    display: none;
+    position: absolute;
+    padding: 0 7px 14px;
+    width: 100%;
+    top: 100%;
+    z-index: 99;
+    left: 0;
+    background-color: #fff
+}
+
+.HeaderMenu .Header-findbox .form-group {
+    margin: 0;
+    position: relative
+}
+
+.HeaderMenu .Header-findbox .form-group .form-control {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: solid 2px #904b58;;
+    box-shadow: none;
+    font-size: 23px;
+    height: 56px;
+    padding-left: 21px;
+    font-weight: normal
+}
+
+.HeaderMenu .Header-findbox .form-group:before {
+    position: absolute;
+    left: 0;
+    height: 35px;
+    width: 7px;
+    content: "";
+    background-color: #904b58;;
+    top: 10.5px
+}
+
+.HeaderMenu .HeaderNav {
+    padding: 0px;
+    background-color: #f9f9f9;
+    list-style: none;
+    box-shadow: -1px 1px 1px #ccc;
+    border-bottom: solid 7px #904b58;;
+    margin: 0
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container {
+    display: table;
+    padding: 0px;
+    list-style: none;
+    margin: 0;
+    width: 100%
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element {
+    float: none;
+    display: table-cell;
+    border-left: solid 1px #ddd;
+    position: relative;
+    max-width: 175px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.exception {
+    max-width: 175px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element:last-of-type {
+    border-right: solid 1px #ddd
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.selected > a {
+    color: #904b58;;
+    position: relative
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.selected > a:before {
+    position: absolute;
+    content: '';
+    margin-right: 4px;
+    left: 21px;
+    height: 14px;
+    width: 7px;
+    top: 24px;
+    background-color: #904b58;
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element > a {
+    padding: 21px 28px 21px 28px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: center;
+    color: inherit;
+    position: relative;
+    line-height: 21px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element > a:hover {
+    text-decoration: underline
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.dropdown > a:after {
+    content: '\f078';
+    font-family: FontAwesome
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.dropdown > ul {
+    margin: 7px 0 0;
+    padding: 0;
+    border-radius: 0
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.dropdown > ul > li {
+    border-bottom: solid 1px #ddd
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.dropdown > ul > li > a {
+    padding: 14px 28px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px #999;
+    z-index: 5
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content {
+    padding: 21px;
+    column-count: 4;
+    list-style: none;
+    column-fill: auto !important;
+    max-height: 500px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content > div:nth-of-type(4) {
+    break-after: column !important
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content .Header-navigation-parent > ul {
+    padding: 0;
+    list-style: none
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content .Header-navigation-parent > ul .Header-navigation-child {
+    padding: 7px 14px;
+    color: #333;
+    border: solid 1px #ddd;
+    display: inline-table;
+    width: 100%
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content .Header-navigation-parent > ul .Header-navigation-child a {
+    padding-left: 28px;
+    font-weight: normal
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content .Header-navigation-parent > ul .Header-navigation-child:first-child a {
+    padding-left: 14px !important;
+    font-weight: bolder !important
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element .HeaderNav-navigation .HeaderNav-navigation-content .Header-navigation-parent > ul .Header-navigation-child:last-child {
+    margin-bottom: 14px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.active .HeaderNav-navigation {
+    display: block
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element:nth-last-of-type(1) .dropdown-menu,.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element:nth-last-of-type(2) .dropdown-menu,.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element:nth-last-of-type(3) .dropdown-menu {
+    left: auto;
+    right: 0
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink {
+    display: none !important;
+    background-color: #fff;
+    border-bottom: solid 1px #ddd
+}
+
+@media (max-width: 767px) {
+    .HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink {
+        display: block !important
+    }
+
+    table.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink {
+        display: table
+    }
+
+    tr.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink {
+        display: table-row !important
+    }
+
+    th.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink,td.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink {
+        display: table-cell !important
+    }
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink > a {
+    color: #6a7475;
+    font-size: 14px;
+    padding-left: 42px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink > a:before {
+    position: absolute;
+    color: #6a7475;
+    content: "\f0e7";
+    font-family: FontAwesome;
+    left: 21px
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink > a:hover {
+    background-color: transparent
+}
+
+.HeaderMenu .HeaderNav > .container > .Header-container .HeaderNav-element.Fastlink:hover {
+    opacity: 0.7
+}
+
+.Dark > .HeaderMenu > .HeaderNav-mobile > a,.Dark > .HeaderMenu > .Header-finder > a {
+    border-color: #fff;
+    color: #fff
+}
+
+.Dark > .HeaderMenu > .HeaderNav-mobile > a:before,.Dark > .HeaderMenu > .Header-finder > a:before {
+    color: #fff
+}
+
+.Dark > .HeaderMenu > .HeaderNav-mobile > a.Active,.Dark > .HeaderMenu > .Header-finder > a.Active {
+    color: #fff;
+    background-color: #fff
+}
+
+.Dark > .HeaderMenu > .HeaderNav-mobile > a.Active:before,.Dark > .HeaderMenu > .Header-finder > a.Active:before {
+    color: #fff
+}
+
+.Dark > .HeaderMenu > .HeaderNav > .container > .Header-container > .selected > a {
+    color: #fff
+}
+
+.Dark > .HeaderMenu > .HeaderNav > .container > .Header-container > .selected > a:before {
+    background-color: #fff
+}
+
+.Dark > .HeaderMenu > .Header-findbox > form > .form-group > .form-control {
+    border-color: #fff
+}
+
+.Dark > .HeaderMenu > .Header-findbox > form > .form-group:before {
+    background-color: #fff
+}
+
+@media (max-width: 991px) {
+    .HeaderMenu {
+        display: table;
+        width: 100%;
+        position: relative;
+        padding: 14px 7px;
+        background: none;
+        background-color: #fff
+    }
+
+    .HeaderMenu .HeaderNav {
+        border: none;
+        display: none;
+        box-shadow: none;
+        position: absolute;
+        padding: 0 7px;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 4
+    }
+
+    .HeaderMenu .HeaderNav .container {
+        border: solid 1px #ddd;
+        background-color: #f9f9f9;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container {
+        display: block
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element {
+        max-width: none;
+        width: 100%;
+        border: none;
+        border-bottom: solid 1px #ddd;
+        display: block
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element:last-of-type {
+        border: none
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element > a {
+        text-align: left;
+        padding: 10.5px 14px;
+        font-weight: normal;
+        font-size: 18px
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element > a:hover,.HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element > a:focus {
+        background-color: #efefef;
+        text-decoration: none
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.dropdown > a:after {
+        position: absolute;
+        right: 14px
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.dropdown.open .dropdown-menu {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        width: 100%;
+        float: none;
+        top: 0;
+        box-shadow: none;
+        border: none;
+        border-top: solid 1px #ddd
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.dropdown.open .dropdown-menu li {
+        border-bottom: solid 1px #ddd
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.dropdown.open .dropdown-menu li a {
+        padding: 7px 7px 7px 35px;
+        font-weight: normal;
+        color: #808080;
+        font-size: 15px
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.dropdown.open .dropdown-menu li:last-of-type {
+        border: none
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.selected > a {
+        font-weight: bolder;
+        padding-left: 28px
+    }
+
+    .HeaderMenu .HeaderNav .container .Header-container .HeaderNav-element.selected > a:before {
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 14px
+    }
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 9999;
+    display: flex; /* Agrega display flex para alinear los elementos horizontalmente */
+  }
+  .menu li {
+    position: relative;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 2em;
+    background: #6c9ef2;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Convertir el texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo al pasar el cursor */
+  }
+  
+  .menu li a:hover {
+    background-color: #71c82a;
+  }
+  
+  
+  .menu ul li ul {
+    display: none;
+  }
+  
+  .menu ul li a:hover + ul,
+  .menu ul li ul:hover {
+    display: block;
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:#6c9ef2;
+    /* border: 1px solid #12a826; */
+    /* padding: 10px; */
+    z-index: 9999;
+  }
+  
+  .submenu li {
+    display: block;
+  }
+  
+  .submenu li a {
+    color: #666;
+    background-color: #6c9ef2;
+    font-size: 14px; /* Tamaño de fuente */
+    font-weight: normal; /* Texto sin negrita */
+    text-transform: none; /* Mantener el texto en su formato original */
+    letter-spacing: normal; /* Espaciado normal entre letras */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Convertir el texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    transition: background-color 0.3s ease; 
+  }
+  
+  .submenu li a:hover {
+    color: #ffffff;
+    background-color: #71c82a;
+  }

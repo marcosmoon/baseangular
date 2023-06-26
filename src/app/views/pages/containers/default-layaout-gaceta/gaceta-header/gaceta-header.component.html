@@ -1,0 +1,34 @@
+
+<header class="Header ">
+    <div class="Header-top">
+        <div class="container">
+            <div class="row">
+                <div class="Header-content">
+                    <div class="HeaderLogo">
+                        <a href="#">
+                            <img class="Logo-empresa" src="../../../../assets/img/Logo_slogan.png">
+                            <img class="Logo-dep" src="../../../../assets/img/Logo_Descripcion.png">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="HeaderMenu">
+        <ul class="HeaderNav">
+            <div class="container">
+                <ul class="menu">
+                    <li *ngFor="let menuItem of menuItems" class="HeaderNav-element dropdown" (click)="toggleSubMenu($event)">
+                        <a [routerLink]="menuItem.route" routerLinkActive="active" class="dropdown-toggle"  (click)="toggleSubMenu(menuItem)">{{ menuItem.title }}</a>
+                        <ul *ngIf="menuItem.submenu && menuItem.submenu.length > 0 && menuItem.isSubMenuOpen" class="submenu">
+                        <li *ngFor="let submenuItem of menuItem.submenu" >
+                            <a [routerLink]="submenuItem.route" routerLinkActive="active">{{ submenuItem.title }}</a>
+                        </li>
+                        </ul>
+                    </li>
+                </ul> 
+            </div>
+        </ul>
+    </div>
+</header>

@@ -1,0 +1,43 @@
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 800px;
+}
+
+h1 {
+  background-color: #519e82;
+  background-image: linear-gradient(to bottom,  #78da24, #177f22);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+// @media (min-width: 768px) {
+//     .container {
+//         width: 750px
+//     }
+// }
+
+// @media (min-width: 992px) {
+//     .container {
+//         width: 970px
+//     }
+// }
+
+// @media (min-width: 1200px) {
+//     .container {
+//         width: 1170px
+//     }
+// }

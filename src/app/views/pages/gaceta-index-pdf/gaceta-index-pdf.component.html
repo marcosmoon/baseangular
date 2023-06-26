@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="utf-8">
+    <title>Portal Consejería Jurídica y de Servicios Legales del DF - Gaceta</title>
+</head>
+<body>
+    <header id="header">
+        <div id="logo">
+            <span style="color: #9f2241; font-weight: normal;" >CEJUR /</span>
+            <span style="color: #9f2241;">Gaceta</span>
+            <br>
+            <a href="#" title="Unidad de Transparencia">
+                <img alt="" height="43" onmouseout="this.src='../../../../assets/img/Transparencia_gris_shein.png'" onmouseover="this.src='../../../../assets/img/Transparencia_guinda_shein.png'" src="../../../../assets/img/Transparencia_gris_shein.png" width="97">
+            </a>
+        </div>
+    </header> -->
+    <div class="container">
+        <h1>GACETA MUNICIPAL</h1>
+        <p> En este espacio encontrarás Leyes, Decretos, Reglamentos, Acuerdos, Circulares, Convocatorias de Procedimiento de Licitación, Avisos de Fallo, Resoluciones emitidas en procedimiento de acción de inconstitucionalidad o de controversias constitucionales; así como todos aquellos documentos que por disposición legal sea obligatoria su publicación, emanados de los Órganos de Gobierno Municipal de San Pedro Tlacolula, Oaxaca, así como de los Órganos Públicos Autónomos. Así como Avisos de fusión, Estados Financieros, Avisos Notariales, Edictos y todos aquellos documentos que por disposición legal expresa deban publicarse, solicitados por particulares.</p>
+    </div>
+     <table class="pdf-table">
+        <tr *ngFor="let pdf of pdfData">
+            <td class="image-cell">
+                <a class="pointer" (click)="show_image(pdf.id)" target="_blank">
+                    <img src="../../../../assets/img/GACETITA_G.png" alt="PDF Image" width="100" height="150">
+                </a>
+                <h4>Da click para descargar el documento</h4>
+            </td>
+            <td>
+                <h2 class="pdf-title">{{ pdf.title }}</h2>
+                <p class="pdf-description">{{ pdf.description }}</p>
+                <p class="pdf-description">{{ pdf.description2 }}</p>
+            </td>
+        </tr>
+    </table>
+<!-- </body>
+</html> -->

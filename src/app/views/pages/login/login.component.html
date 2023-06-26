@@ -1,0 +1,42 @@
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-atom" [fullScreen]="true">
+  <div class="row justify-content-md-center" style="margin-top: 10px;">
+    <img src="assets/images/logomayblancototal.png" style="width:350px;">
+  </div>
+</ngx-spinner>
+
+<div class="login-background">
+  <div class="login-container">
+    <div class="login-header">
+      <img src="assets/img/avatars/10.png" alt="User Icon" class="user-icon">
+    </div>
+    <div class="login-content">
+      <form [formGroup]="frmOperation" autocomplete="off">
+        <h2 class="login-title">Ingreso al sistema</h2>
+
+        <div class="form-group">
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Usuario</mat-label>
+            <input matInput placeholder="Usuario" autofocus="true" formControlName="email">
+            <mat-icon matPrefix>person</mat-icon>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Contraseña</mat-label>
+            <mat-icon matPrefix>key</mat-icon>
+            <input matInput [ngClass]="{'my-password-field' : hide}" formControlName="password">
+            <mat-icon (click)="hide = !hide" matSuffix>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group text-center">
+          <button mat-flat-button color="primary" type="submit" (click)="login()">
+            <mat-icon class="icon-display">lock_open</mat-icon>
+            Ingresar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
