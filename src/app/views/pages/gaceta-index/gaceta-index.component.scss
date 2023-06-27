@@ -29405,18 +29405,21 @@ textarea.Filter-select--labeled .Filter-select-group .Filter-select-input {
   }
   
   .controls {
-    margin-top: 10px;
+    //margin-top: 10px;
+    display: flex;
+  align-items: center;
   }
 
   .navigation-dots {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: -20px;
   }
   
   .dot {
-    width: 10px;
-    height: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
     background-color: #ccc;
     border-radius: 50%;
     margin: 0 5px;

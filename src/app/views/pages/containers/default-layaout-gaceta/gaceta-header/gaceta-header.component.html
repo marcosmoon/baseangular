@@ -16,6 +16,21 @@
         </div>
     </div>
     <div class="HeaderMenu">
+        <div class="HeaderNav-mobile" (mouseenter)="toggleMobileMenu($event)" (mouseleave)="toggleMobileMenu($event)">
+          <a class="Mobile-actions">Menú</a>
+          <ul *ngIf="isMobileMenuOpen" class="mobile-menu-list">
+            <li *ngFor="let menuItem of menuItemsMovile" class="mobile-menu-item">
+              <a [routerLink]="menuItem.route" routerLinkActive="active" (mouseenter)="toggleMobileSubMenu(menuItem)" (mouseleave)="toggleMobileSubMenu(menuItem)">{{ menuItem.title }}</a>
+              <ul *ngIf="menuItem.submenu && menuItem.submenu.length > 0 && menuItem.isMobileSubMenuOpen" class="mobile-submenu">
+                <li *ngFor="let submenuItem of menuItem.submenu">
+                  <a [routerLink]="submenuItem.route" routerLinkActive="active">{{ submenuItem.title }}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+          
         <ul class="HeaderNav">
             <div class="container">
                 <ul class="menu">
@@ -27,8 +42,8 @@
                         </li>
                         </ul>
                     </li>
-                </ul> 
-            </div>
+                </ul>
+            </div> 
         </ul>
     </div>
 </header>
