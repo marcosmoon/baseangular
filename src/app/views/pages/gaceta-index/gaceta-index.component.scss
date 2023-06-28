@@ -19378,7 +19378,8 @@ main > .container {
 }
 
 .Title {
-    margin: 0
+    margin: 0;
+    margin-bottom: -10px;
 }
 
 .Title.Single {
@@ -27748,11 +27749,11 @@ textarea.Filter-select--labeled .Filter-select-group .Filter-select-input {
 }
 
 .Panel-elements.Banner.Home {
-    margin-bottom: 63px
+    margin-bottom: 33px;
 }
 
 .Panel-elements.Banner.Home > .Title {
-    height: 84px
+    height: 54px;
 }
 
 .Panel-empty.Transmission > .Title {
@@ -29224,7 +29225,7 @@ textarea.Filter-select--labeled .Filter-select-group .Filter-select-input {
 }
 
 #Sidebar-nav .Sidebar-heading .Sidebar-title {
-    padding: 14px;
+    padding: 12px;
     width: 100%
 }
 
@@ -29399,8 +29400,8 @@ textarea.Filter-select--labeled .Filter-select-group .Filter-select-input {
   }
   
   .slide-image {
-    width: 100%;
-    height: 90%px;
+    width: 85%;
+    height: 70%px;
     object-fit: cover;
   }
   
@@ -29429,17 +29430,20 @@ textarea.Filter-select--labeled .Filter-select-group .Filter-select-input {
   .dot.active {
     background-color: #333;
   }
-
+  //CAMBIAR AQUI
   .separator-line {
     height: 2px;
     background-color: #dddddd;
     margin: 10px 0;
+    width: 85%;
   }
 
+  //CAMBIAR AQUI
   .description-container {
     //background-color:  #e53213;
     background-image: linear-gradient(to bottom,  #D83E1F, #e53515);
     padding: 10px;
+    width: 85%;
   }
 @media (min-width: 768px) {
     .Slider .Panel-slider--full .Panel-slider-image {
@@ -29483,7 +29487,7 @@ textarea.Filter-select--labeled .Filter-select-group .Filter-select-input {
 }
 
 .Slider .Panel-slider--full .Panel-slider-card > .Title {
-    padding: 14px
+    padding: 12px
 }
 
 .Slider .Panel-slider--full .Panel-slider-card > .Text {
@@ -32200,3 +32204,9 @@ textarea.Filter-select--labeled .Filter-select-group .Filter-select-input {
     }
 }
 
+.centered-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}

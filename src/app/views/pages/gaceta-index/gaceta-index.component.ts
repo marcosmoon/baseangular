@@ -3,19 +3,31 @@ import { PlatformLocation } from '@angular/common';
 import { ITicketResponse } from 'src/app/interfaces/ITicketResponse';
 import { GacetaService } from 'src/app/services/core/gaceta.service';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
-
+interface ImageSidebar {
+  nombre: string;
+  descripcion: string;
+}
 @Component({
   selector: 'app-gaceta-index',
   templateUrl: './gaceta-index.component.html',
   styleUrls: ['./gaceta-index.component.scss']
 })
+
+
 export class GacetaIndexComponent implements OnInit, OnDestroy {
   items: ITicketResponse[] = [];
+  showModal: boolean = false;
   currentIndex: number = 0;
   isSubMenuOpen: boolean = false;
   subMenuStates: boolean[] = [];
   slidePosition = 0;
   interval: any;
+  images: ImageSidebar[] = [
+    { nombre: 'lateral3.jpg', descripcion: 'PALACIO MUNICIPAL' },
+    { nombre: 'lateral4.jpg', descripcion: 'QUIOSCO' },
+    { nombre: 'lateral5.jpg', descripcion: 'SAN PEDRO TOTOLAPAM' }
+  ];
+  baseUrl: string = '../../../../assets/img/';
 
   constructor(
     private gacetaService: GacetaService,
@@ -29,6 +41,13 @@ export class GacetaIndexComponent implements OnInit, OnDestroy {
         this.items = response.data;
         console.log('imprimo lo que trae response.data');
         console.log(response.data);
+  
+        const image = new Image();
+        image.onload = () => {
+          const height = image.height;
+          console.log('Altura de la imagen:', height);
+        };
+        image.src = 'ruta-de-la-imagen';
       },
       error => {
         console.error(error);
@@ -86,5 +105,45 @@ export class GacetaIndexComponent implements OnInit, OnDestroy {
         [menuKey]: true
       };
     }
+  }
+
+  openModal(index: number) {
+    this.currentIndex = index;
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
+  }
+
+  previousImage() {
+    this.currentIndex--;
+    if (this.currentIndex < 0) {
+      this.currentIndex = this.images.length - 1;
+    }
+  }
+
+  nextImage() {
+    this.currentIndex++;
+    if (this.currentIndex >= this.images.length) {
+      this.currentIndex = 0;
+    }
+  }
+
+  isImageSmaller(image: string): Promise<boolean> {
+    
+    const minHeight = 900;
+    return new Promise<boolean>((resolve) => {
+      const img = new Image();
+      img.onload = () => {
+        console.log("Se imprime el tamanio de la imagen");
+    console.log(image);
+        resolve(img.height < minHeight);
+      };
+      img.onerror = () => {
+        resolve(false); 
+      };
+      img.src = image;
+    });
   }
 }
