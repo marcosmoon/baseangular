@@ -7,8 +7,6 @@ import { GacetaIndexComponent } from './gaceta-index/gaceta-index.component';
 import { GacetaIndexPdfComponent } from './gaceta-index-pdf/gaceta-index-pdf.component';
 import { DefaultLayaoutGacetaComponent } from './containers/default-layaout-gaceta';
 
-
-
 const routes: Routes = [
   {
     path: '404',
@@ -24,21 +22,6 @@ const routes: Routes = [
       title: 'Login Page'
     }
   },
-  // {
-  //   path: 'gaceta',
-  //   component: DefaultLayaoutGacetaComponent,
-  //   data: {
-  //     title: 'gaceta'
-  //   }
-  // },
-  // {
-  //   path: 'gacetapdf',
-  //   component: GacetaIndexPdfComponent,
-  //   data: {
-  //     title: 'gacetapdf'
-  //   }
-  // },
-  
 ];
 
 @NgModule({

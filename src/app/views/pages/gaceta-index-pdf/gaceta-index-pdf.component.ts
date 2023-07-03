@@ -26,22 +26,28 @@ export class GacetaIndexPdfComponent implements OnInit {
     this.get_data();
   }
 
-  get_data(){
-    console.log("antes de llamar al servicio")
-    this.gacetaService.getAllPdfs().subscribe(async (response: any)=>{
-      this.spinner.hide();
-      console.log("Entra a traer los datos")
-      console.log(response.data);
-      response.data.forEach((gaceta: any) => {
-        this.pdfData.push({
-          id: gaceta.id,
-          title: gaceta.title,
-          description: gaceta.description,
-          description2: gaceta.description2,
-          pdfFile: gaceta.pdfFile
+  get_data() {
+    console.log("antes de llamar al servicio");
+    this.gacetaService.getAllPdfs().subscribe(
+      (response: any) => {
+        this.spinner.hide();
+        console.log("Entra a traer los datos");
+        console.log(response.data);
+        response.data.forEach((gaceta: any) => {
+          this.pdfData.push({
+            id: gaceta.id,
+            title: gaceta.title,
+            description: gaceta.description,
+            description2: gaceta.description2,
+            pdfFile: gaceta.pdfFile
+          });
         });
-      });
-    });
+      },
+      (error: any) => {
+        this.spinner.hide();
+        console.error("Error al obtener los datos:", error);
+      }
+    );
   }
 
   show_image(image: string, number: string) {

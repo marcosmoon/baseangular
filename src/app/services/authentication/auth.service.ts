@@ -35,10 +35,10 @@ export class AuthService {
   }
   
   // Login
-  login(data: ILoginRequest) { return this.http.post<IResponse<any>>(`${this.apiURL}/authenticationform/login`, data) }
+  login(data: ILoginRequest) { return this.http.post<IResponse<any>>(`${this.apiURL}/authenticationgaceta/login`, data) }
 
   logout() {
-    this.http.put(`${this.apiURL}/authenticationform/logout-user`, null).subscribe(() => {
+    this.http.put(`${this.apiURL}/authenticationgaceta/logout-user`, null).subscribe(() => {
       this.logoutUnauthorized();
     }, (error) => {
       this.logoutUnauthorized();
@@ -78,7 +78,7 @@ export class AuthService {
   refreshToken() {
     var responseToken: ITokenResponse = { token: this.getJwt(), refreshToken: this.getRjwt(), userData: this.getUserData() };
 
-    return this.http.post<IResponse<ITokenResponse>>(`${this.apiURL}/authenticationform/refreshToken`, responseToken)
+    return this.http.post<IResponse<ITokenResponse>>(`${this.apiURL}/authenticationgaceta/refreshToken`, responseToken)
       .pipe(tap((response: IResponse<ITokenResponse>) => {
         this.saveJwt(response.data);
       }));
