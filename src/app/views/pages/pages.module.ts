@@ -30,6 +30,9 @@ import { DefaultLayaoutGacetaComponent } from './containers/default-layaout-gace
 import { GacetaHistoriaComponent } from './gaceta-historia/gaceta-historia.component';
 import { GacetaFestividadesComponent } from './gaceta-festividades/gaceta-festividades.component';
 import { GacetaFormasVestirComponent } from './gaceta-formas-vestir/gaceta-formas-vestir.component';
+import { GacetaEstructuraOrganicaComponent } from './gaceta-estructura-organica/gaceta-estructura-organica.component';
+import { GacetaMarcoNormativoComponent } from './gaceta-marco-normativo/gaceta-marco-normativo.component';
+
 
 // import {
 //   GacetaFooterComponent,
@@ -55,6 +58,8 @@ import { GacetaFormasVestirComponent } from './gaceta-formas-vestir/gaceta-forma
     GacetaHistoriaComponent,
     GacetaFestividadesComponent,
     GacetaFormasVestirComponent,
+    GacetaEstructuraOrganicaComponent,
+    GacetaMarcoNormativoComponent,
   ],
   imports: [
     NgxCaptchaModule,
@@ -73,7 +78,8 @@ import { GacetaFormasVestirComponent } from './gaceta-formas-vestir/gaceta-forma
     MatProgressSpinnerModule,
     HttpClientModule,
     NgOtpInputModule,
-    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
+    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' }),
+    
   ],
   providers: [
     AuthService

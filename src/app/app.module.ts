@@ -192,7 +192,7 @@ const APP_CONTAINERS = [
     MatDialogModule,
     MatTooltipModule,
     MatSortModule,
-    OwlModule
+    OwlModule,
   ],
 
   providers: [

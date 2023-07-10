@@ -37,9 +37,9 @@ export class GacetaHeaderComponent implements OnInit {
     {
       title: 'Gobierno Transparente ',
       submenu: [
-        { title: 'Estructura orgánica' },
-        { title: 'Marco Normativo' },
-        { title: 'Contacto' },
+        { title: 'Estructura orgánica', route: '/index/estructura' },
+        { title: 'Marco Normativo', route: '/index/marconormativo' },
+        { title: 'Contacto', },
       ],
       isSubMenuOpen: true,
       isMobileMenuOpen:true
@@ -65,13 +65,13 @@ export class GacetaHeaderComponent implements OnInit {
       title: 'Festividades', route: '/index/festividades'
     },
     { 
-      title: 'Estructura orgánica' 
+      title: 'Estructura orgánica', route: '/index/estructura'
     },
     { 
-      title: 'Marco Normativo' 
+      title: 'Marco Normativo', route: '/index/marconormativo' 
     },
     { 
-      title: 'Contacto' 
+      title: 'Contacto',
     },
     {
       title: 'Gaceta Oficial',
@@ -95,5 +95,9 @@ export class GacetaHeaderComponent implements OnInit {
   toggleMobileMenu(event: Event): void {
     event.preventDefault();
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  scrollToBottom() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   }
 }

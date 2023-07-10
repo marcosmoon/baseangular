@@ -38,7 +38,7 @@
                         <a [routerLink]="menuItem.route" routerLinkActive="active" class="dropdown-toggle"  (click)="toggleSubMenu(menuItem)">{{ menuItem.title }}</a>
                         <ul *ngIf="menuItem.submenu && menuItem.submenu.length > 0 && menuItem.isSubMenuOpen" class="submenu">
                         <li *ngFor="let submenuItem of menuItem.submenu" >
-                            <a [routerLink]="submenuItem.route" routerLinkActive="active">{{ submenuItem.title }}</a>
+                            <a [routerLink]="submenuItem.route" routerLinkActive="active" (click)="scrollToBottom()">{{ submenuItem.title }}</a>
                         </li>
                         </ul>
                     </li>

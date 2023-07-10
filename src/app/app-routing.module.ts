@@ -16,6 +16,8 @@ import { DefaultLayaoutGacetaComponent } from './views/pages/containers/default-
 import { GacetaHistoriaComponent } from './views/pages/gaceta-historia/gaceta-historia.component';
 import { GacetaFestividadesComponent } from './views/pages/gaceta-festividades/gaceta-festividades.component';
 import { GacetaFormasVestirComponent } from './views/pages/gaceta-formas-vestir/gaceta-formas-vestir.component';
+import { GacetaEstructuraOrganicaComponent } from './views/pages/gaceta-estructura-organica/gaceta-estructura-organica.component';
+import { GacetaMarcoNormativoComponent } from './views/pages/gaceta-marco-normativo/gaceta-marco-normativo.component';
 
 
 
@@ -53,6 +55,8 @@ const routes: Routes = [
       { path: '', component: GacetaIndexComponent},
       { path: 'historia', component: GacetaHistoriaComponent, data: { title: 'Historia' } },
       { path: 'festividades', component: GacetaFestividadesComponent, data: { title: 'Festividades' } },
+      { path: 'estructura', component: GacetaEstructuraOrganicaComponent, data: { title: 'Estructura' } },
+      { path: 'marconormativo', component: GacetaMarcoNormativoComponent, data: { title: 'Marco' } },
       { path: 'formasvestir', component: GacetaFormasVestirComponent, data: { title: 'Formas de Vestir' } },
       { path: 'gacetapdf', component: GacetaIndexPdfComponent, data: { title: 'Gaceta' } },
     ]
