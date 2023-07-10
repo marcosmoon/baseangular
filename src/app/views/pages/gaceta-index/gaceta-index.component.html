@@ -2,6 +2,7 @@
         <main>
             <div class="container">
                 <div id="Level-1">
+                    <!-- IMAGENES DE SLIDER -->
                     <div class="Content">
                         <div class="slider">
                           <div class="slides" [style.transform]="'translateX(' + slidePosition + '%)'">
@@ -16,19 +17,6 @@
                               <div class="separator-line"></div>
                             </div>
                           </div>
-                          <!-- <div class="slides" [style.transform]="'translateX(' + slidePosition + '%)'">
-                            <div class="slide" *ngFor="let item of items">
-                                <img [src]="getSafeImageUrl(item.image)" alt="" [class.centered-image]="isImageSmaller(item.image) | async" class="slide-image">
-                              <div class="separator-line"></div>
-                              <div class="description-container">
-                                <div class="description">
-                                  <p>{{ item.description }}</p>
-                                </div>
-                              </div>
-                              <div class="separator-line"></div>
-                            </div>
-                          </div> -->
-                          
                           <div class="controls">
                             <button (click)="previousSlide()"><i class="fas fa-arrow-left"></i></button>
                             <button (click)="nextSlide()"><i class="fas fa-arrow-right"></i></button>
@@ -39,42 +27,41 @@
                           </div>
                           <div class="separator-line"></div>                          
                         </div>
-                      </div>                      
-                      <div class="Sidebar">
-                        <div class="Panel-elements Banner Home" *ngFor="let image of images; let i = index">
-                          <div class="Image">
-                            <a (click)="openModal(i)" id="banner_1">
-                              <img alt="" height="160" [src]="baseUrl + image.nombre" width="320">      
+                    </div>           
+                    <!-- IMAGENES BARRA LATERAL            -->
+                    <div class="Sidebar">
+                    <div class="Panel-elements Banner Home" *ngFor="let image of images; let i = index">
+                        <div class="Image">
+                        <a (click)="openModal(i)" id="banner_1">
+                            <img alt="" height="160" [src]="baseUrl + image.nombre" width="320">      
+                        </a>
+                        </div>
+                        <div class="Title">
+                        <h3>
+                            <a id="link_banner_1" target="_self">
+                            {{ image.descripcion }}
                             </a>
-                          </div>
-                          <div class="Title">
-                            <h3>
-                              <a id="link_banner_1" target="_self">
-                                {{ image.descripcion }}
-                              </a>
-                            </h3>
-                          </div>
+                        </h3>
                         </div>
-                      </div>
-                      
-                      <div class="modal" *ngIf="showModal">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h4 class="modal-title">{{ images[currentIndex].descripcion }}</h4>
-                            <button type="button" class="close" aria-label="Close" (click)="closeModal()">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <img class="img-fluid" [src]="baseUrl + images[currentIndex].nombre">
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" (click)="previousImage()">Previous</button>
-                            <button type="button" class="btn btn-primary" (click)="nextImage()">Next</button>
-                          </div>
+                    </div>
+                    </div>
+                    <div class="modal" *ngIf="showModal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="modal-title">{{ images[currentIndex].descripcion }}</h4>
+                        <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                         </div>
-                      </div>
-                                  
+                        <div class="modal-body">
+                        <img class="img-fluid" [src]="baseUrl + images[currentIndex].nombre">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" (click)="previousImage()">Previous</button>
+                        <button type="button" class="btn btn-primary" (click)="nextImage()">Next</button>
+                        </div>
+                    </div>
+                    </div>               
                 </div>
                 <!-- <div class="container">
                     <div class="owl-carousel owl-theme">
@@ -95,93 +82,24 @@
                         <div class="Panel-empty Image-links R3">
                             <div class="Title">
                                 <h2>
+                                    CONOCIENDO SAN PEDRO TOTOLAPAM
                                 </h2>
                             </div>
-                            <div class="Panel-imageLinks-item">
+                            <!-- IMAGENES DE GALERIA -->
+                            <div *ngFor="let imagen of galeria" class="Panel-imageLinks-item">
                                 <div class="Image-normal">
-                                    <a href="#" target="_self">
-                                        <img alt="" height="180" src="../../../../assets/img/galeria7.jpg" width="320">
-                                    </a>
+                                  <a target="_self">
+                                    <img alt="" height="180" [src]="baseUrl + imagen.rutaImagen" width="320">
+                                  </a>
                                 </div>
                                 <div class="Title">
-                                    <h4>
-                                        <a href="#" target="_self">
-                                            Descripcion Galeria 1
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="Panel-imageLinks-item">
-                                <div class="Image-normal">
-                                    <a href="#" target="_self">
-                                        <img alt="" height="180" src="../../../../assets/img/galeria8.jpg" width="320">
+                                  <h4>
+                                    <a href="" target="_self">
+                                      {{ imagen.descripcion }}
                                     </a>
+                                  </h4>
                                 </div>
-                                <div class="Title">
-                                    <h4>
-                                        <a href="#" target="_self">
-                                            Descripcion Galeria 2
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="Panel-imageLinks-item">
-                                <div class="Image-normal">
-                                    <a href="#" target="_self">
-                                        <img alt="" height="180" src="../../../../assets/img/galeria9.jpg" width="320">
-                                    </a>
-                                </div>
-                                <div class="Title">
-                                    <h4>
-                                        <a href="#" target="_self">
-                                            Descripcion Galeria 3
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="Panel-imageLinks-item">
-                                <div class="Image-normal">
-                                    <a href="#" target="_self">
-                                        <img alt="" height="180" src="../../../../assets/img/galeria10.jpg" width="320">
-                                    </a>
-                                </div>
-                                <div class="Title">
-                                    <h4>
-                                        <a href="#" target="_self">
-                                            Descripcion Galeria 4
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="Panel-imageLinks-item">
-                                <div class="Image-normal">
-                                    <a href="#" target="_self">
-                                        <img alt="" height="180" src="../../../../assets/img/galeria11.jpg" width="320"> 
-                                    </a>
-                                </div>
-                                <div class="Title">
-                                    <h4>
-                                        <a href="#" target="_self">
-                                            Descripcion Galeria 5
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="Panel-imageLinks-item">
-                                <div class="Image-normal">
-                                    <a href="#" target="_self">
-                                        <img alt="" height="180" src="../../../../assets/img/galeria12.jpg" width="320">
-                                        
-                                    </a>
-                                </div>
-                                <div class="Title">
-                                    <h4>
-                                        <a href="" target="_self">
-                                            Descripcion Galeria 6
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
+                            </div>                              
                         </div>
                     </div>
                 </div>
@@ -193,161 +111,61 @@
                     <div class="FullContent">
                         <div class="Title">
                             <h2>
-                                Comunicación
+                                FIESTA PATRONAL EN SAN PEDRO TOTOLAPAM
                             </h2>
                         </div>
                     </div>
                     <div class="Content">
-                        <div class="Panel-elements Card News">
+                        <!-- IMAGENES DE FIESTA PATRONAL -->
+                        <div *ngFor="let imagen of imagesSPT" class="Panel-elements Card News">
                             <div class="Panel-card-image">
-                                <div class="Image-news">
-                                    <a href="#">
-                                        <img alt="" height="180" src="../../../../assets/img/comunicacion4.jpg" width="320">
-                                    </a>
-                                </div>
+                              <div class="Image-news">
+                                <a>
+                                  <img alt="" height="180" [src]="baseUrl + imagen.rutaImagen" width="320">
+                                </a>
+                              </div>
                             </div>
                             <div class="Panel-card-card">
-                                <div class="Datetime-tag">
-                                    <a href="#">
-                                        DESCRIPCION
-                                    </a>
-                                    <span>
-                                        01 Abril 2023
-                                    </span>
-                                </div>
-                                <div class="Title">
-                                    <h3>
-                                        <a href="#">
-                                            Titulo o Descripcion...
-                                        </a>
-                                    </h3>
-                                </div>
-                                <div class="Text">
-                                </div>
+                              <div class="Datetime-tag">
+                                <a>
+                                  {{ imagen.descripcion }}
+                                </a>
+                                <span>
+                                  {{ imagen.fecha }}
+                                </span>
+                              </div>
+                              <div class="Title">
+                                <h3>
+                                  <a>
+                                    {{ imagen.titulo }}
+                                  </a>
+                                </h3>
+                              </div>
+                              <div class="Text">
+                                <!-- Aquí puedes añadir texto adicional si lo deseas -->
+                              </div>
                             </div>
-                        </div>
-                        <div class="Panel-elements Card News">
-                            <div class="Panel-card-image">
-                                <div class="Image-news">
-                                    <a href="#">
-                                        <img alt="" height="180" src="../../../../assets/img/comunicacion5.jpg" width="320">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="Panel-card-card">
-                                <div class="Datetime-tag">
-                                    <a href="#">
-                                        DESCRIPCION
-                                    </a>
-                                    <span>
-                                        31 Marzo 2023
-                                    </span>
-                                </div>
-                                <div class="Title">
-                                    <h3>
-                                        <a href="#">
-                                            Titulo o Descripcion...
-                                        </a>
-                                    </h3>
-                                </div>
-                                <div class="Text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Panel-elements Card News">
-                            <div class="Panel-card-image">
-                                <div class="Image-news">
-                                    <a href="#">
-                                        <img alt="" height="180" src="../../../../assets/img/comunicacion6.jpg" width="320"> 
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="Panel-card-card">
-                                <div class="Datetime-tag">
-                                    <a href="#">
-                                        DESCRIPCION
-                                    </a>
-                                    <span>
-                                        29 Marzo 2023
-                                    </span>
-                                </div>
-                                <div class="Title">
-                                    <h3>
-                                        <a href="#">
-                                            Titulo o Descripcion...
-                                        </a>
-                                    </h3>
-                                </div>
-                                <div class="Text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Link-section">
-                            <a href="#">
-                                Ver todas las publicaciones
-                            </a>
-                        </div>
+                          </div>                          
                     </div>
                     <div class="Sidebar">
                         <div class="Slider-tweets">
                             <div class="Title">
                                 <h3>
-                                    Últimos tweets
+                                    Otras imagenes...
                                 </h3>
                             </div>
-                            <div class="Slider-one owl-carousel owl-theme owl-loaded">
-                                <div class="owl-stage-outer">
-                                    <div class="owl-stage" style="transform: translate3d(-2160px, 0px, 0px); transition: all 0.25s ease 0s; width: 3240px;">
-                                        <div class="owl-item cloned" style="width: 360px; margin-right: 0px;">
-                                            <div class="item">
-                                                <div class="Text">
-                                                    <a href="#" target="_blank">
-                                                        Descripcion
-                                                    </a>
-                                                   
-                                                    <a href="#" target="_blank">
-                                                        
-                                                    </a>
-                                                </div>
-                                                <div class="Text">
-                                                    <a href="#" target="_blank">
-                                                        <strong>
-                                                            Descripcion
-                                                        </strong>
-                                                    </a>
-                                                    RT @GobCDMX:
-                                                    <a href="#" target="_blank">
-                                                        #EnVivo
-                                                    </a>
-                                                    ▶️ La
-                                                    <a href="#" target="_blank">
-                                                        #JefaDeGobierno
-                                                    </a>
-                                                    encabeza el recorrido de supervisión de obra de la rehabilitación de la Terminal 2 de…
-                                                    <a href="#" target="_blank">
-                                                        https://t.co/SjnoWOttA8
-                                                    </a>
-                                                </div>
-                                                <div class="Text">
-                                                    <a href="#" target="_blank">
-                                                        <strong>
-                                                            @CDMXConsejeria
-                                                        </strong>
-                                                    </a>
-                                                    <a href="#" target="_blank">
-                                                        #JornadaNotarial2023
-                                                    </a>
-                                                    en Coyoacán hasta mañana viernes, 21 de abril.
-                                                    <a href="#" target="_blank">
-                                                        https://t.co/kzLWeKD0Y3
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                   
-                                    </div>
+                            <div class="Slider-one">
+                                <div class="item" *ngFor="let imagen of imageMiniCarousel; let i = index" [ngStyle]="{ 'display': indiceMiniCarouselActual === i ? 'block' : 'none' }">
+                                  <img [src]="baseUrl + imagen.rutaImagen" alt="">
+                                  <div class="Text">
+                                    {{ imagen.descripcion }}
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
+                              
+                              <button class="arrow-button"(click)="anteriorImagen()">Anterior</button>
+                              <button class="arrow-button"(click)="siguienteImagen()">Siguiente</button>
+                              
                         </div>
                     </div>
                 </div>

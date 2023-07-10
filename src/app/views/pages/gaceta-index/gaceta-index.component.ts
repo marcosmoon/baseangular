@@ -7,6 +7,17 @@ interface ImageSidebar {
   nombre: string;
   descripcion: string;
 }
+interface ImageGaleria {
+  descripcion: string;
+  rutaImagen: string;
+}
+
+interface ImageLevel5 {
+  descripcion: string;
+  fecha: string;
+  rutaImagen: string;
+  titulo: string;
+}
 @Component({
   selector: 'app-gaceta-index',
   templateUrl: './gaceta-index.component.html',
@@ -22,12 +33,28 @@ export class GacetaIndexComponent implements OnInit, OnDestroy {
   subMenuStates: boolean[] = [];
   slidePosition = 0;
   interval: any;
+  baseUrl: string = '../../../../assets/img/';
+
   images: ImageSidebar[] = [
     { nombre: 'lateral3.jpg', descripcion: 'PALACIO MUNICIPAL' },
     { nombre: 'lateral4.jpg', descripcion: 'QUIOSCO' },
     { nombre: 'lateral5.jpg', descripcion: 'SAN PEDRO TOTOLAPAM' }
   ];
-  baseUrl: string = '../../../../assets/img/';
+
+  galeria: ImageGaleria[] = [
+    { descripcion: "Amanecer San pedro Totolapam",rutaImagen: "galeria7.jpg"},
+    { descripcion: "Rio San Pedro Totolapam",rutaImagen: "galeria8.jpg"},
+    { descripcion: "Cultivo de Agave",rutaImagen: "galeria9.jpg"},
+    { descripcion: "Principales Casas",rutaImagen: "galeria10.jpg"},
+    { descripcion: "Rio Totolapam en tiempo de lluvias",rutaImagen: "galeria11.jpg"},
+    { descripcion: "Casa de adobe antigua",rutaImagen: "galeria12.jpg"},
+  ];
+
+  imagesSPT: ImageLevel5[]  = [
+    {descripcion: "SAN PEDRO TOTOLAPAM", fecha: "29 Junio", rutaImagen: "comunicacion4.jpg", titulo: "La festividad en honor a San Pedro se celebra 29 de Junio, comenzando el dia con calendas recorriendo las principales calles de la comunidad."},
+    {descripcion: "SAN PEDRO TOTOLAPAM", fecha: "29 Junio", rutaImagen: "comunicacion5.jpg", titulo: "Todos los visitantes y personas de la comunidad se reunen en el centro para observar los diferentes torneos y bailables que organiza la autoridad."},
+    {descripcion: "SAN PEDRO TOTOLAPAM", fecha: "29 Junio", rutaImagen: "comunicacion6.jpg", titulo: "Finalmente se culmina con un baile estelar, donde se presentan diversos grupos musicales de la region."}
+  ];
 
   constructor(
     private gacetaService: GacetaService,
@@ -54,6 +81,8 @@ export class GacetaIndexComponent implements OnInit, OnDestroy {
       }
     );
     this.startSlider();
+    this.imagenMiniCarouselActual = this.imageMiniCarousel[0];
+    this.indiceMiniCarouselActual = 0;
   }
 
   ngOnDestroy() {
@@ -131,7 +160,6 @@ export class GacetaIndexComponent implements OnInit, OnDestroy {
   }
 
   isImageSmaller(image: string): Promise<boolean> {
-    
     const minHeight = 900;
     return new Promise<boolean>((resolve) => {
       const img = new Image();
@@ -145,5 +173,44 @@ export class GacetaIndexComponent implements OnInit, OnDestroy {
       };
       img.src = image;
     });
+  }
+
+  imageMiniCarousel = [
+    {
+      rutaImagen: "minicarousel1.jpg",
+      descripcion: "Cerro de la Cruz"
+    },
+    {
+      rutaImagen: "minicarousel2.jpg",
+      descripcion: "Entrada al templo"
+    },
+    {
+      rutaImagen: "minicarousel3.jpg",
+      descripcion: "Parroquia de la comunidad"
+    },
+  ];
+
+  imagenMiniCarouselActual: any;
+  indiceMiniCarouselActual: number;
+
+  cambiarImagen(indice: number) {
+    this.imagenMiniCarouselActual = this.imageMiniCarousel[indice];
+    this.indiceMiniCarouselActual = indice;
+  }
+
+  siguienteImagen() {
+    if (this.indiceMiniCarouselActual === this.imageMiniCarousel.length - 1) {
+      this.cambiarImagen(0);
+    } else {
+      this.cambiarImagen(this.indiceMiniCarouselActual + 1);
+    }
+  }
+
+  anteriorImagen() {
+    if (this.indiceMiniCarouselActual === 0) {
+      this.cambiarImagen(this.imageMiniCarousel.length - 1);
+    } else {
+      this.cambiarImagen(this.indiceMiniCarouselActual - 1);
+    }
   }
 }
