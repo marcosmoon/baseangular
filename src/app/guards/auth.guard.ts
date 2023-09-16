@@ -14,7 +14,7 @@ export class AuthGuard implements CanActivate {
             return true;
         }
 
-        this.router.navigate(['/tickets'], { queryParams: { returnUrl: state.url } });
+        this.router.navigate(['/index'], { queryParams: { returnUrl: state.url } });
         return false;
     }
 
@@ -23,7 +23,7 @@ export class AuthGuard implements CanActivate {
             return true;
         }
 
-        this.router.navigate(['/tickets'], { queryParams: { returnUrl: state.url } });
+        this.router.navigate(['/index'], { queryParams: { returnUrl: state.url } });
         return false;
     }
 
