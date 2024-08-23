@@ -5,7 +5,6 @@
 export const environment = {
   production: false,
   apiURL: 'https://localhost:7119/api',
-  //apiURL:'https://lacorporativa.azurewebsites.net/api',
   timeoutRefreshToken: 15
 };
 
