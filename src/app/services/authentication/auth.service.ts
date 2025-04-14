@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 import { json } from 'stream/consumers';
 import { ILoginRequest } from '../../interfaces/ILoginRequest';
 import { IResponse } from '../../interfaces/IResponse';
-import { ITokenResponse, IUserData } from '../../interfaces/ITokenResponse';
+import { ITokenResponse, IUserData } from 'src/app/interfaces/ITokenResponse';
 
 
 @Injectable({  providedIn: 'root'})

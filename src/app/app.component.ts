@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
   lastPing?: Date;
 
 
-  title = 'Municipio de San Pedro Totolapam';
+  title = 'Editor Pdf';
 
   private timeoutRefreshToken = environment.timeoutRefreshToken;
 

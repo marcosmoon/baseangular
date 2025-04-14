@@ -82,21 +82,14 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatTreeModule} from '@angular/material/tree';
 import { TreeviewModule } from 'ngx-treeview';
 import {MatCardModule} from '@angular/material/card';
-import { NgxFileDropModule } from 'ngx-file-drop';
+// import { NgxFileDropModule } from 'ngx-file-drop';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoaderInterceptor } from './interceptors/loader-interceptor.service';
 import { NgOtpInputModule } from  'ng-otp-input';
 
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { GacetaManageComponent } from './views/core/gaceta-manage/gaceta-manage.component';
-import { GacetaAddComponent } from './views/core/gaceta-manage/gaceta-add/gaceta-add.component';
-import { SliderManageComponent } from './views/core/slider-manage/slider-manage.component';
-import { SliderAddComponent } from './views/core/slider-manage/slider-add/slider-add.component';
-import { SliderShowImageComponent } from './views/core/slider-manage/slider-show-image/slider-show-image.component';
-// import { GacetaFooterComponent } from './views/pages/containers/default-layaout-gaceta/gaceta-footer/gaceta-footer.component';
-// import { GacetaHeaderComponent } from './views/pages/containers/default-layaout-gaceta/gaceta-header/gaceta-header.component';
-// import { DefaultLayaoutGacetaComponent } from './views/pages/containers/default-layaout-gaceta';
+import { ToolboxComponent } from './views/core/toolbox/toolbox.component';
 
 
 
@@ -129,11 +122,7 @@ const APP_CONTAINERS = [
     ...APP_CONTAINERS,
     InputRestrictionDirective,
     DashboardComponent,
-    GacetaManageComponent,
-    GacetaAddComponent,
-    SliderManageComponent,
-    SliderAddComponent,
-    SliderShowImageComponent,
+    ToolboxComponent,
   ],
   imports: [
     BrowserModule,
@@ -184,7 +173,7 @@ const APP_CONTAINERS = [
     TreeviewModule.forRoot(),
     MatCheckboxModule,
     MatCardModule,
-    NgxFileDropModule,
+    // NgxFileDropModule,
     NgOtpInputModule,
     NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' }),
     NgbModule,

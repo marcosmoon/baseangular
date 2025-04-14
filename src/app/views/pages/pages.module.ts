@@ -22,16 +22,9 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { NgOtpInputModule } from  'ng-otp-input';
 
 import { NgxCaptchaModule } from 'ngx-captcha';
-import { GacetaIndexComponent } from './gaceta-index/gaceta-index.component';
-import { GacetaIndexPdfComponent } from './gaceta-index-pdf/gaceta-index-pdf.component';
 import { GacetaFooterComponent } from './containers/default-layaout-gaceta/gaceta-footer/gaceta-footer.component';
 import { GacetaHeaderComponent } from './containers/default-layaout-gaceta/gaceta-header/gaceta-header.component';
 import { DefaultLayaoutGacetaComponent } from './containers/default-layaout-gaceta';
-import { GacetaHistoriaComponent } from './gaceta-historia/gaceta-historia.component';
-import { GacetaFestividadesComponent } from './gaceta-festividades/gaceta-festividades.component';
-import { GacetaFormasVestirComponent } from './gaceta-formas-vestir/gaceta-formas-vestir.component';
-import { GacetaEstructuraOrganicaComponent } from './gaceta-estructura-organica/gaceta-estructura-organica.component';
-import { GacetaMarcoNormativoComponent } from './gaceta-marco-normativo/gaceta-marco-normativo.component';
 
 
 // import {
@@ -50,16 +43,9 @@ import { GacetaMarcoNormativoComponent } from './gaceta-marco-normativo/gaceta-m
     LoginComponent,
     //...APP_CONTAINERS,
     Page404Component,
-    GacetaIndexComponent,
-    GacetaIndexPdfComponent,
     GacetaFooterComponent,
     GacetaHeaderComponent,
     DefaultLayaoutGacetaComponent,
-    GacetaHistoriaComponent,
-    GacetaFestividadesComponent,
-    GacetaFormasVestirComponent,
-    GacetaEstructuraOrganicaComponent,
-    GacetaMarcoNormativoComponent,
   ],
   imports: [
     NgxCaptchaModule,

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GacetaIndexPdfComponent } from './gaceta-index-pdf.component';
+import { ToolboxComponent } from './toolbox.component';
 
-describe('GacetaIndexPdfComponent', () => {
-  let component: GacetaIndexPdfComponent;
-  let fixture: ComponentFixture<GacetaIndexPdfComponent>;
+describe('ToolboxComponent', () => {
+  let component: ToolboxComponent;
+  let fixture: ComponentFixture<ToolboxComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GacetaIndexPdfComponent ]
+      declarations: [ ToolboxComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GacetaIndexPdfComponent);
+    fixture = TestBed.createComponent(ToolboxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
